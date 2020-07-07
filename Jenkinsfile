@@ -10,7 +10,7 @@ pipeline{
                 sh 'echo "Hello World"'
                 withAWS(region:'us-west-2', credentials:'aws-static'){
                 sh '''
-                    s3Upload(file:'index.html', bucket:'vivek.tech.jenkins', path:'/')
+                    s3Upload(file:'index.html', bucket:'jen-bucket7', path:'/')
                     echo "Multiline shell steps work too"
                 }              
                     ls -lah
